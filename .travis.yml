@@ -1,0 +1,9 @@
+language: go
+
+go:
+  - 1.0
+  - 1.1
+
+# Default is go get -d -v ./... && go build -v ./...
+#  but the acceptance tests mean that go build doesn't work
+install: go get -d -v ./...
